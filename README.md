@@ -2,12 +2,14 @@
 
 一款专注于本地文件编辑、界面精致、开箱即用的 Markdown 编辑器。无需注册、无需建库、绿色便携，只为专注写作而生。
 <img width="1282" height="802" alt="edit" src="https://github.com/user-attachments/assets/8673bdb7-2ee9-4114-b3a7-d894e80026af" />
+<img width="1282" height="802" alt="Screenshot_20260710165332" src="https://github.com/user-attachments/assets/e63b2eea-b641-4f26-b223-879a708c3015" />
 
 
 ---
-💻 系统要求
+## 💻 系统要求
+
 本项目基于 Tauri 内核开发，需要 WebView2 运行时，各平台最低运行版本如下：
-Windows：Windows 10 1803+，Win 11
+- Windows：Windows 10 1803+，Win 11
 ---
 
 ## ✨ 核心亮点
@@ -64,6 +66,8 @@ Windows：Windows 10 1803+，Win 11
 1. **传统标题目录**：完整展示各级标题与内容层级
 2. **精简大纲**：仅显示标题结构，专注文章骨架梳理
 
+<img width="1282" height="802" alt="界面" src="https://github.com/user-attachments/assets/ad7e5a5c-5314-4d89-8075-a62402ab8001" />
+
 ---
 
 ## ⚡ 效率工具
@@ -105,8 +109,9 @@ Windows：Windows 10 1803+，Win 11
 
 ## 🛣️ 路线规划
 
+- [ ] 完善多语言支持
+- [ ] 完善主题支持
 - [ ] PDF / Word 格式导出
-- [ ] 图片拖拽上传与本地管理
 - [ ] 更多笔记本背景模板
 - [ ] 插件扩展系统
 
