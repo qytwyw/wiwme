@@ -26,7 +26,7 @@
 ### 多主题系统
 - 内置亮色 / 暗色两套默认主题，一键切换
 - 支持加载第三方主题包，轻松定制整体视觉风格
-- 精简大纲样式可通过主题 CSS 文件深度自定义
+- 目录支持两种模式，都可通过主题 CSS 文件深度自定义
 <img width="1282" height="802" alt="theme" src="https://github.com/user-attachments/assets/72fbb65e-dfca-4acb-a781-a42278de8f56" />
 
 
