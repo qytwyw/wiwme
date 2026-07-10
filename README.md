@@ -9,7 +9,7 @@
 ## 💻 系统要求
 
 本项目基于 Tauri 内核开发，需要 WebView2 运行时，各平台最低运行版本如下：
-- Windows：Windows 10 1803+，Win 11
+- Windows：Win10 1803+，Win 11
 ---
 
 ## ✨ 核心亮点
