@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
     /* ========== 主色与功能色（低饱和柔和版） ========== */
   --color-primary: #4A7CB8;
   --color-primary-75: rgb(from var(--color-primary) r g b / 75%);

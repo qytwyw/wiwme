@@ -1,0 +1,166 @@
+:root {
+  color-scheme: light;
+    /* ========== 主色与功能色 ========== */
+  --color-primary: #6B82A8;
+  --color-primary-75: rgb(from var(--color-primary) r g b / 75%);
+  --color-primary-50: rgb(from var(--color-primary) r g b / 50%);
+  --color-primary-25: rgb(from var(--color-primary) r g b / 25%);
+  --color-primary-15: rgb(from var(--color-primary) r g b / 15%);
+
+  --color-danger: #C46060;
+  --color-danger-secondary: #AF6B73;
+  --color-danger-muted: #F3DAD8;
+  --color-danger-faint: #F7E7E5;
+  --color-check: #59AE9E;
+  --color-success: #609B68;
+  --color-invalid-fg: #E28E8E;
+  --color-invalid-bg: #FAF5E8;
+  --color-focus-ring: var(--color-primary);
+
+  /* ========== 前景色（文字） ========== */
+  --fg-0: #3A3530;
+  --fg-primary: #403B36;
+  --fg-10: #49433D;
+  --fg-20: #554F48;
+  --fg-secondary: #656058;
+  --fg-tertiary: #787168;
+  --fg-muted: #928B80;
+  --fg-faint: #B5ADA0;
+
+  /* ========== 背景色 ========== */
+  --bg-60: #CFC4B3;
+  --bg-70: #E5DBCB;
+  --bg-secondary: #F0E8DA;
+  --bg-muted: #F5EFE3;
+  --bg-90: #F8F3E8;
+  --bg-faint: #FAF5EB;
+  --bg-100: #FBF6ED;
+
+  /* ========== UI 组件颜色 ========== */
+  --hint-bg: #E9F1E3;
+  --hint-icon-color: var(--color-success);
+  --hint-border-color: var(--color-success);
+
+  --popover-bg: var(--bg-100);
+  --popover-color: var(--fg-10);
+  --popover-shadow:
+    0px 2px 8px #3A353012,
+    0px 12px 24px #3A35300A;
+
+  --control-bg-primary: var(--bg-100);
+  --control-bg-secondary: #EBE3D5;
+  --control-bg-tertiary: #E2D9CC;
+
+  --btn-bg: transparent;
+  --btn-hover-bg: var(--bg-secondary);
+  --btn-active-bg: var(--bg-70);
+  --btn-frame-hover-bg: #E2D8C8;
+  --btn-frame-active-bg: #D6CCBC;
+  --btn-github-bg: #35302B;
+  --btn-github-hover: #453F38;
+  --btn-bilibili-bg: #EE92A6;
+  --btn-bilibili-hover: #F3A3B5;
+
+  --list-item-hover-bg: var(--bg-secondary);
+  --tree-item-hover-bg: var(--control-bg-tertiary);
+
+  --log-error-bg: #F7E6E4;
+  --log-warning-bg: #FBF1D9;
+  --log-border-color: #D4DCE8;
+
+  --border-color: #D9D0C1;
+  --border-color-hover: #BEB4A3;
+  --border-color-dark: #5C554C;
+  --border-draggable-color: #CDD9E8;
+
+  --tabbar-border-color: var(--border-color);
+  --tab-hover-bg: var(--bg-faint);
+  --tab-active-bg: var(--bg-100);
+  --tab-caret-bg: var(--color-primary);
+
+  --scrollbar-track-bg: #F5EFE3;
+  --scrollbar-thumb-bg: #CFC4B3;
+  --scrollbar-thumb-hover-bg: #A89E8E;
+
+  /* ========== 图标颜色 ========== */
+  --icon-frame-color: #6F6860;
+  --icon-color-text: #6B82A8;
+  --icon-color-link: #52A8C5;
+  --icon-color-list: #7282D8;
+  --icon-color-codeBlock: #5ABF72;
+  --icon-color-blockquote: #6B82A8;
+  --icon-color-horizontalRule: #F09A4C;
+  --icon-color-image: #F0CB50;
+  --icon-color-table: #59AE9E;
+  --icon-color-html: #35B890;
+  --icon-color-braces: #E2B840;
+  --icon-color-markdown: #5C8FE0;
+  --icon-color-file: #6F6860;
+  --icon-color-folder: #6DB3E0;
+  --icon-color-new: #59AE9E;
+  --icon-color-temp: #F09A4C;
+  --icon-color-modified: #E2A840;
+  --icon-color-delete: #DE6262;
+  --icon-color-saved: #6B82A8;
+  --icon-color-log: #47474733;
+  --icon-color-info: #6B82A8;
+  --icon-color-warning: #DE8C4C;
+  --icon-color-error: #CE5C56;
+
+  /* ========== 图标交互状态 ========== */
+  --icon-favorite-hover-fill: #F0C84C;
+  --icon-favorite-hover-stroke: #EEC242;
+  --icon-favorite-active-fill: #F4DA78;
+  --icon-favorite-active-stroke: #EEC242;
+
+  --icon-cheatsheet-hover-rect-fill: #475569;
+  --icon-cheatsheet-hover-rect-stroke: #334155;
+  --icon-cheatsheet-hover-path-stroke: #F1F5F9;
+  --icon-cheatsheet-active-rect-fill: #334155;
+  --icon-cheatsheet-active-rect-stroke: #1E293B;
+  --icon-cheatsheet-active-path-stroke: #F1F5F9;
+
+  --icon-log-hover-rect-fill: #475569;
+  --icon-log-hover-rect-stroke: #334155;
+  --icon-log-hover-line-stroke: #4ADE80;
+  --icon-log-active-rect-fill: #334155;
+  --icon-log-active-rect-stroke: #1E293B;
+  --icon-log-active-line-stroke: #22C55E;
+
+  --icon-theme-hover-fill: #E87095;
+  --icon-theme-hover-stroke: var(--icon-theme-hover-fill);
+  --icon-theme-hover-circle: #E8F0DF;
+  --icon-theme-active-fill: #E87095;
+  --icon-theme-active-stroke: var(--icon-theme-active-fill);
+  --icon-theme-active-circle: #68D190;
+
+  --icon-setting-hover-path-fill: #475569;
+  --icon-setting-hover-path-stroke: #334155;
+  --icon-setting-hover-circle: var(--bg-100);
+  --icon-setting-active-path-fill: #334155;
+  --icon-setting-active-path-stroke: #1E293B;
+  --icon-setting-active-circle: var(--bg-100);
+
+  --icon-about-hover-path: var(--bg-100);
+  --icon-about-hover-circle-fill: #6B82A8;
+  --icon-about-hover-circle-stroke: #5D7498;
+  --icon-about-active-path: var(--bg-100);
+  --icon-about-active-circle-fill: #5D7498;
+  --icon-about-active-circle-stroke: #4F6685;
+
+  /* ========== 编辑器颜色 ========== */
+  --color-pattern-grid: #E6DED0;
+  --color-pattern-line: #D9D0C1;
+  --color-pattern-dots: #CDC4B5;
+  --color-link: #4F75A8;
+  --color-blockquote-border: var(--border-color-dark);
+  --color-blockquote-font: var(--fg-tertiary);
+  --color-mark-bg: #FFF3C2;
+  --color-mark-text: var(--fg-20);
+  --color-table-bg: var(--bg-100);
+  --color-table-bg-muted: var(--bg-muted);
+  --color-table-border: var(--border-color);
+  --color-pre-font: var(--fg-secondary);
+  --color-pre-bg: var(--bg-muted);
+  --color-code-bg: var(--bg-secondary);
+}
