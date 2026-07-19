@@ -46,7 +46,8 @@
   --popover-shadow:
     0px 2px 8px #2E363312,
     0px 12px 24px #2E36330A;
-
+   --popover-backdrop: rgba(46, 54, 51, 0.65);
+   
   --control-bg-primary: var(--bg-100);
   --control-bg-secondary: #E5EADD;
   --control-bg-tertiary: #DCE3D4;
@@ -74,9 +75,12 @@
   --border-draggable-color: #CBD8E6;
 
   --tabbar-border-color: var(--border-color);
+  --tabbar-border-focus-color: #e0a42e;
   --tab-hover-bg: var(--bg-faint);
   --tab-active-bg: var(--bg-100);
   --tab-caret-bg: var(--color-primary);
+  
+  --outline-base: #586560;
 
   --scrollbar-track-bg: #EEF3E8;
   --scrollbar-thumb-bg: #BFC6B8;
