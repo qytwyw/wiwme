@@ -163,4 +163,24 @@
   --color-pre-font: var(--fg-secondary);
   --color-pre-bg: var(--bg-muted);
   --color-code-bg: var(--bg-secondary);
+  
+  --color-search-result: light-dark(#ffff00, #ffff00);
+  --color-search-result-current: light-dark(#ff9632, #ff9632);
+  
+  --base00: #F4F5F7;
+  --base01: #EFF1F4;
+  --base02: #D0DBE8;
+  --base03: #89919C;
+  --base04: #DCE0E5;
+  --base05: #353B42;
+  --base06: #F4F5F7;
+  --base07: #F4F5F7;
+  --base08: #C25A5A;
+  --base09: #3A70A3;
+  --base0A: #655690;
+  --base0B: #2A5491;
+  --base0C: #366096;
+  --base0D: #60508D;
+  --base0E: #942F55;
+  --base0F: #353B42;
 }
