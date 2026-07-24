@@ -1,7 +1,9 @@
 {
-  "preview": "#182220",
+  "scheme": "dark",
+  "primary": "#6A9EB0",
+  "bg": "#2A3834",
+  "fg": "#CAD4CF",
 	"version": "v1.0.0",
 	"author": "王怿武",
-	"type": "dark",
 	"desc": "夜间 / 暗光环境使用，大幅降低暗光下的视觉刺激。"
 }

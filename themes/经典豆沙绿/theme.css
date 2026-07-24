@@ -2,6 +2,7 @@
   color-scheme: light;
     /* ========== 主色与功能色 ========== */
   --color-primary: #4A7CA8;
+  --color-primary-85: rgb(from var(--color-primary) r g b / 85%);
   --color-primary-75: rgb(from var(--color-primary) r g b / 75%);
   --color-primary-50: rgb(from var(--color-primary) r g b / 50%);
   --color-primary-25: rgb(from var(--color-primary) r g b / 25%);
@@ -166,6 +167,7 @@
   --color-table-border: var(--border-color);
   --color-pre-font: var(--fg-secondary);
   --color-pre-bg: var(--bg-muted);
+  --color-pre-border: var(--border-color);
   --color-code-bg: var(--bg-secondary);
   
   --color-search-result: light-dark(#ffff00, #ffff00);

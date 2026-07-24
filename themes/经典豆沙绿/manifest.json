@@ -1,7 +1,9 @@
 {
-  "preview": "#F5F8EF",
+  "scheme": "light",
+  "primary": "#4A7CA8",
+  "bg": "#E8EDE2",
+  "fg": "#353D3A",
 	"version": "v1.0.0",
 	"author": "王怿武",
-	"type": "light",
 	"desc": "认可度最高的护眼底色，有效缓解屏幕视疲劳。"
 }
