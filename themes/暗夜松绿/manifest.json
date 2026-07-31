@@ -3,7 +3,7 @@
   "primary": "#6A9EB0",
   "bg": "#2A3834",
   "fg": "#CAD4CF",
-	"version": "v1.0.0",
-	"author": "王怿武",
+	"version": "v1.1.0",
+	"author": "豆包修订",
 	"desc": "夜间 / 暗光环境使用，大幅降低暗光下的视觉刺激。"
 }

@@ -17,6 +17,7 @@
   --color-invalid-fg: #E08A8A;
   --color-invalid-bg: #F8F5E6;
   --color-focus-ring: var(--color-primary);
+  --color-syntax: #7ed6df;
 
   /* ========== 前景色（文字） ========== */
   --fg-0: #2E3633;

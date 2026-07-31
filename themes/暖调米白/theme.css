@@ -17,6 +17,7 @@
   --color-invalid-fg: #E88A8A;
   --color-invalid-bg: #FAF5E6;
   --color-focus-ring: var(--color-primary);
+  --color-syntax: #93c5fd;
 
   /* ========== 前景色（文字）：深灰替代纯黑，分级柔和过渡 ========== */
   --fg-0: #2B2E32;
