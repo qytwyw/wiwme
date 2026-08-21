@@ -2,11 +2,6 @@
   color-scheme: light;
     /* ========== 主色与功能色 ========== */
   --color-primary: #4A7CA8;
-  --color-primary-85: rgb(from var(--color-primary) r g b / 85%);
-  --color-primary-75: rgb(from var(--color-primary) r g b / 75%);
-  --color-primary-50: rgb(from var(--color-primary) r g b / 50%);
-  --color-primary-25: rgb(from var(--color-primary) r g b / 25%);
-  --color-primary-15: rgb(from var(--color-primary) r g b / 15%);
 
   --color-danger: #C25A5A;
   --color-danger-secondary: #AA6870;
@@ -18,45 +13,46 @@
   --color-invalid-bg: #F8F5E6;
   --color-focus-ring: var(--color-primary);
   --color-syntax: #7ed6df;
-
-  /* ========== 前景色（文字） ========== */
-  --fg-0: #2E3633;
-  --fg-primary: #353D3A;
-  --fg-10: #3C4541;
-  --fg-20: #48524D;
-  --fg-secondary: #586560;
-  --fg-tertiary: #6B7872;
-  --fg-muted: #88948E;
-  --fg-faint: #AEBAB4;
-
-  /* ========== 背景色 ========== */
-  --bg-60: #BFC6B8;
-  --bg-70: #D8DED1;
-  --bg-secondary: #E8EDE2;
-  --bg-muted: #EEF3E8;
-  --bg-90: #F2F6EC;
-  --bg-faint: #F4F7EE;
-  --bg-100: #F5F8EF;
+  --color-error-bg: #F8E6E4;
+  /* ========== base ========== */
+--base00: #F5F8EF;
+--base01: #F2F6EC;
+--base02: #EEF3E8;
+--base03: #E8EDE2;
+--base04: #E9EEE3;
+--base05: #AEBAB4;
+--base06: #88948E;
+--base07: #6B7872;
+--base08: #48524D;
+--base09: #353D3A;
+--base0A: #665791;
+--base0B: #2B5794;
+--base0C: #376399;
+--base0D: #61518F;
+--base0E: #973057;
+--base0F: #C25A5A;
+--base0G: #3A73A6;
+--base0S: rgb(from var(--color-primary) r g b / 35%);
 
   /* ========== UI 组件颜色 ========== */
   --hint-bg: #E6F2E4;
   --hint-icon-color: var(--color-success);
   --hint-border-color: var(--color-success);
 
-  --popover-bg: var(--bg-100);
-  --popover-color: var(--fg-10);
+  --popover-bg: var(--base00);
+  --popover-color: var(--base09);
   --popover-shadow:
     0px 2px 8px #2E363312,
     0px 12px 24px #2E36330A;
    --popover-backdrop: rgba(46, 54, 51, 0.65);
    
-  --control-bg-primary: var(--bg-100);
-  --control-bg-secondary: #E5EADD;
-  --control-bg-tertiary: #DCE3D4;
+  --control-bg-base: var(--bg-100);
+  --control-bg: #E5EADD;
+  --control-bg-acrive: #DCE3D4;
 
   --btn-bg: transparent;
-  --btn-hover-bg: var(--bg-secondary);
-  --btn-active-bg: var(--bg-70);
+  --btn-hover-bg: var(--base03);
+  --btn-active-bg: var(--control-bg-acrive);
   --btn-frame-hover-bg: #D8DFD0;
   --btn-frame-active-bg: #CCD4C4;
   --btn-github-bg: #2F3835;
@@ -64,22 +60,21 @@
   --btn-bilibili-bg: #EE8FA6;
   --btn-bilibili-hover: #F3A0B5;
 
-  --list-item-hover-bg: var(--bg-secondary);
-  --tree-item-hover-bg: var(--control-bg-tertiary);
+  --list-item-hover-bg: var(--base03);
+  --tree-item-hover-bg: var(--control-bg-acrive);
 
-  --log-error-bg: #F8E6E4;
+  --log-error-bg: var(--color-error-bg);
   --log-warning-bg: #FBF1D8;
   --log-border-color: #D1DDE8;
 
   --border-color: #D5DBCD;
   --border-color-hover: #BAC2B0;
-  --border-color-dark: #58605C;
   --border-draggable-color: #CBD8E6;
 
   --tabbar-border-color: var(--border-color);
   --tabbar-border-focus-color: #e0a42e;
-  --tab-hover-bg: var(--bg-faint);
-  --tab-active-bg: var(--bg-100);
+  --tab-hover-bg: var(--base01);
+  --tab-active-bg: var(--base00);
   --tab-caret-bg: var(--color-primary);
   
   --outline-base: #586560;
@@ -112,6 +107,7 @@
   --icon-color-info: #4A7CA8;
   --icon-color-warning: #DC8A4A;
   --icon-color-error: #CC5A55;
+  --icon-color-latex: #A057BC;
 
   /* ========== 图标交互状态 ========== */
   --icon-favorite-hover-fill: #EEC84A;
@@ -142,52 +138,36 @@
 
   --icon-setting-hover-path-fill: #475569;
   --icon-setting-hover-path-stroke: #334155;
-  --icon-setting-hover-circle: var(--bg-100);
+  --icon-setting-hover-circle: var(--base00);
   --icon-setting-active-path-fill: #334155;
   --icon-setting-active-path-stroke: #1E293B;
-  --icon-setting-active-circle: var(--bg-100);
+  --icon-setting-active-circle: var(--base00);
 
-  --icon-about-hover-path: var(--bg-100);
+  --icon-about-hover-path: var(--base00);
   --icon-about-hover-circle-fill: #4A7CA8;
   --icon-about-hover-circle-stroke: #3D6F98;
-  --icon-about-active-path: var(--bg-100);
+  --icon-about-active-path: var(--base00);
   --icon-about-active-circle-fill: #3D6F98;
   --icon-about-active-circle-stroke: #336085;
 
   /* ========== 编辑器颜色 ========== */
+  --color-selection-blur: var(--color-primary-25);
   --color-pattern-grid: #E2E8DA;
   --color-pattern-line: #D5DBCD;
   --color-pattern-dots: #CACFC2;
   --color-link: #3D75A8;
-  --color-blockquote-border: var(--border-color-dark);
-  --color-blockquote-font: var(--fg-tertiary);
+  --color-blockquote-border: #58605C;
+  --color-blockquote-text: var(--base07);
   --color-mark-bg: #FFF3C0;
-  --color-mark-text: var(--fg-20);
-  --color-table-bg: var(--bg-100);
-  --color-table-bg-muted: var(--bg-muted);
+  --color-mark-text: var(--base08);
+  --color-table-bg: var(--base00);
+  --color-table-header-bg: var(--base02);
   --color-table-border: var(--border-color);
-  --color-pre-font: var(--fg-secondary);
-  --color-pre-bg: var(--bg-muted);
+  --color-pre-bg: var(--base02);
   --color-pre-border: var(--border-color);
-  --color-code-bg: var(--bg-secondary);
+  --color-code-bg: var(--base02);
+  --color-code-border: var(--border-color);
   
   --color-search-result: light-dark(#ffff00, #ffff00);
   --color-search-result-current: light-dark(#ff9632, #ff9632);
-  
-  --base00: #F5F8EF;
-  --base01: #EEF3E8;
-  --base02: #D1DDE8;
-  --base03: #88948E;
-  --base04: #DCE3D4;
-  --base05: #353D3A;
-  --base06: #F5F8EF;
-  --base07: #F5F8EF;
-  --base08: #C25A5A;
-  --base09: #3A73A6;
-  --base0A: #665791;
-  --base0B: #2B5794;
-  --base0C: #376399;
-  --base0D: #61518F;
-  --base0E: #973057;
-  --base0F: #353D3A;
 }

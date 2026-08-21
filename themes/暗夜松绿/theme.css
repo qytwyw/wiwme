@@ -2,11 +2,6 @@
   color-scheme: dark;
     /* ========== 主色与功能色 ========== */
   --color-primary: #6A9EB0;
-  --color-primary-85: rgb(from var(--color-primary) r g b / 85%);
-  --color-primary-75: rgb(from var(--color-primary) r g b / 75%);
-  --color-primary-50: rgb(from var(--color-primary) r g b / 50%);
-  --color-primary-25: rgb(from var(--color-primary) r g b / 25%);
-  --color-primary-15: rgb(from var(--color-primary) r g b / 15%);
 
   --color-danger: #C26A6A;
   --color-danger-secondary: #B07580;
@@ -18,45 +13,46 @@
   --color-invalid-bg: #3D3328;
   --color-focus-ring: var(--color-primary);
   --color-syntax: #0f766e;
-
-  /* ========== 前景色（文字） ========== */
-  --fg-0: #D8E1DD;
-  --fg-primary: #CAD4CF;
-  --fg-10: #BFC9C4;
-  --fg-20: #AEBAB4;
-  --fg-secondary: #98A59F;
-  --fg-tertiary: #808E88;
-  --fg-muted: #6A7872;
-  --fg-faint: #54605A;
-
-  /* ========== 背景色 ========== */
-  --bg-60: #4A5854;
-  --bg-70: #3A4844;
-  --bg-secondary: #2A3834;
-  --bg-muted: #22302C;
-  --bg-90: #1D2A26;
-  --bg-faint: #1B2824;
-  --bg-100: #182220;
+  --color-error-bg: #4A2A2A;
+  /* ========== base ========== */
+--base00: #182220;
+--base01: #1D2A26;
+--base02: #22302C;
+--base03: #2A3834;
+--base04: #273632;
+--base05: #54605A;
+--base06: #6A7872;
+--base07: #808E88;
+--base08: #AEBAB4;
+--base09: #CAD4CF;
+--base0A: #FBA942;
+--base0B: #58B080;
+--base0C: #5A9EE0;
+--base0D: #5A9EE0;
+--base0E: #B07AD0;
+--base0F: #E06868;
+--base0G: #6BB3E0;
+--base0S: rgb(from var(--color-primary) r g b / 35%);
 
   /* ========== UI 组件颜色 ========== */
   --hint-bg: #1A352A;
   --hint-icon-color: var(--color-success);
   --hint-border-color: var(--color-success);
 
-  --popover-bg: var(--bg-100);
-  --popover-color: var(--fg-10);
+  --popover-bg: var(--base00);
+  --popover-color: var(--base09);
   --popover-shadow:
     0px 2px 8px #00000018,
     0px 12px 24px #00000012;
   --popover-backdrop: rgba(0, 0, 0, 0.72);
 
-  --control-bg-primary: var(--bg-100);
-  --control-bg-secondary: #2D3D39;
-  --control-bg-tertiary: #3A4A46;
+  --control-bg-base: var(--base00);
+  --control-bg: #2D3D39;
+  --control-bg-avtive: #3A4A46;
 
   --btn-bg: transparent;
-  --btn-hover-bg: var(--bg-secondary);
-  --btn-active-bg: var(--bg-70);
+  --btn-hover-bg: var(--base03);
+  --btn-active-bg: var(--control-bg-avtive);
   --btn-frame-hover-bg: #3A4A46;
   --btn-frame-active-bg: #4A5854;
   --btn-github-bg: #CAD4CF;
@@ -64,22 +60,21 @@
   --btn-bilibili-bg: #D97A90;
   --btn-bilibili-hover: #E58DA0;
 
-  --list-item-hover-bg: var(--bg-secondary);
-  --tree-item-hover-bg: var(--control-bg-tertiary);
+  --list-item-hover-bg: var(--base03);
+  --tree-item-hover-bg: var(--control-bg-avtive);
 
-  --log-error-bg: #4A2A2A;
+  --log-error-bg: var(--color-error-bg);
   --log-warning-bg: #4A3A1A;
   --log-border-color: #4A5A6A;
 
   --border-color: #303E3A;
   --border-color-hover: #485854;
-  --border-color-dark: #8B9892;
   --border-draggable-color: #2D4A5A;
 
   --tabbar-border-color: var(--border-color);
   --tabbar-border-focus-color: #ffc966;
-  --tab-hover-bg: var(--bg-faint);
-  --tab-active-bg: var(--bg-100);
+  --tab-hover-bg: var(--base01);
+  --tab-active-bg: var(--base00);
   --tab-caret-bg: var(--color-primary);
   
   --outline-base: #98A59F;
@@ -112,6 +107,7 @@
   --icon-color-info: #6A9EB0;
   --icon-color-warning: #DC8C50;
   --icon-color-error: #CC605A;
+  --icon-color-latex: #B965D8;
 
   /* ========== 图标交互状态 ========== */
   --icon-favorite-hover-fill: #EEC84A;
@@ -142,15 +138,15 @@
 
   --icon-setting-hover-path-fill: #AEBAB4;
   --icon-setting-hover-path-stroke: #8B9892;
-  --icon-setting-hover-circle: var(--bg-100);
+  --icon-setting-hover-circle: var(--base00);
   --icon-setting-active-path-fill: #BFC9C4;
   --icon-setting-active-path-stroke: #98A59F;
-  --icon-setting-active-circle: var(--bg-100);
+  --icon-setting-active-circle: var(--base00);
 
-  --icon-about-hover-path: var(--bg-100);
+  --icon-about-hover-path: var(--base00);
   --icon-about-hover-circle-fill: #6A9EB0;
   --icon-about-hover-circle-stroke: #5A8EA0;
-  --icon-about-active-path: var(--bg-100);
+  --icon-about-active-path: var(--base00);
   --icon-about-active-circle-fill: #5A8EA0;
   --icon-about-active-circle-stroke: #4A7E90;
 
@@ -159,35 +155,18 @@
   --color-pattern-line: #303E3A;
   --color-pattern-dots: #3A4844;
   --color-link: #5A90B0;
-  --color-blockquote-border: var(--border-color-dark);
-  --color-blockquote-font: var(--fg-tertiary);
+  --color-blockquote-border: #8B9892;
+  --color-blockquote-text: var(--base07);
   --color-mark-bg: #4A3A1A;
-  --color-mark-text: var(--fg-20);
-  --color-table-bg: var(--bg-100);
-  --color-table-bg-muted: var(--bg-muted);
+  --color-mark-text: var(--base08);
+  --color-table-bg: var(--base00);
+  --color-table-header-bg: var(--base02);
   --color-table-border: var(--border-color);
-  --color-pre-font: var(--fg-secondary);
-  --color-pre-bg: var(--bg-muted);
+  --color-pre-bg: var(--base02);
   --color-pre-border: var(--border-color);
-  --color-code-bg: var(--bg-secondary);
+  --color-code-bg: var(--base02);
+  --color-code-border: var(--border-color);
   
   --color-search-result: light-dark(#ffff00, #ffff00);
   --color-search-result-current: light-dark(#ff9632, #ff9632);
-  
-  --base00: #182220;
-  --base01: #22302C;
-  --base02: #2D4A5A;
-  --base03: #6A7872;
-  --base04: #98A59F;
-  --base05: #CAD4CF;
-  --base06: #E0E0E0;
-  --base07: #ffffff;
-  --base08: #E06868;
-  --base09: #6BB3E0;
-  --base0A: #FBA942;
-  --base0B: #58B080;
-  --base0C: #5A9EE0;
-  --base0D: #5A9EE0;
-  --base0E: #B07AD0;
-  --base0F: #5A9EE0;
 }
